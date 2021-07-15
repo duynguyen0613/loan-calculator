@@ -5,26 +5,86 @@
 }
 
 :root {
-  --primary-color: #fff;
-  --secondary-color: #333;
+  --primary-color: #333;
+  --secondary-color: #eee;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  margin-bottom: 2rem;
-  line-height: 1.5;
+html {
+  font-size: 62.5%;
 }
 
-p {
-  margin-bottom: 2rem;
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  height: 100vh;
+  background-color: #ddd;
 }
 
-a {
-  color: #444;
+h2 {
+  margin: 1rem 0;
+  font-weight: 300;
+  font-size: 3rem;
 }
 
-ul {
-  list-style: none;
+.container {
+  margin: 1rem auto;
+  max-width: 250px;
+  background-color: #ccc;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.container h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin: 1rem 0;
+  width: 100%;
+  display: flex;
+}
+
+.form-group span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  background-color: #eee;
+  height: 30px;
+  width: 30px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.form-group input {
+  height: 30px;
+  width: calc(100% - 30px);
+  font-size: 1.5rem;
+  border: none;
+  padding: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  height: 20px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  background-color: #eee;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.btn:active {
+  transform: scale(0.99);
+}
+
+/*  */
+#loan-calculate .form-group:nth-child(3) input {
+  margin-left: 30px;
 }

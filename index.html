@@ -16,9 +16,83 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <!--  -->
-    <title>My Task</title>
+    <title>Loan Calculator</title>
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container">
+      <div id="loan-calculate">
+        <h2>Loan Calculator</h2>
+        <form action="">
+          <div class="form-group">
+            <span>$</span
+            ><input
+              type="number"
+              name="loan-amount"
+              id="loan-amount"
+              placeholder="Enter Loan Amount"
+            />
+            <label for="loan-amount"></label>
+          </div>
+          <div class="form-group">
+            <span>%</span
+            ><input
+              type="number"
+              name="loan-interest"
+              id="loan-interest"
+              placeholder="Enter Loan Interest"
+            />
+            <label for="loan-interest"></label>
+          </div>
+          <div class="form-group">
+            <input
+              type="number"
+              name="loan-year"
+              id="loan-year"
+              placeholder="Enter Loan Year"
+            />
+            <label for="loan-year"></label>
+          </div>
+
+          <input type="submit" value="Calculate" class="btn" />
+        </form>
+      </div>
+      <div class="loading-bar"></div>
+      <div id="loan-result">
+        <h2>Loan Result</h2>
+        <form action="">
+          <div class="form-group">
+            <span>Monthly Payment</span
+            ><input
+              type="number"
+              disabled
+              name="loan-monthly"
+              id="loan-monthly"
+            />
+            <label for="loan-monthly"></label>
+          </div>
+          <div class="form-group">
+            <span>Total Interest</span
+            ><input
+              type="number"
+              disabled
+              name="loan-interest-total"
+              id="loan-interest-total"
+            />
+            <label for="loan-monthly"></label>
+          </div>
+          <div class="form-group">
+            <span>Total Payment</span
+            ><input
+              type="number"
+              disabled
+              name="loan-payment-total"
+              id="loan-payment-total"
+            />
+            <label for="loan-monthly"></label>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./script/app.js"></script>
   </body>
 </html>
